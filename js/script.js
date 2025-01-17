@@ -2,7 +2,7 @@ let numeri = [];
 
 // Generazione dei numeri casuali
 for (let i = 0; i < 5; i++) {
-    numeri.push(Math.floor(Math.random() * 100)); // Numeri casuali
+    numeri.push(Math.floor(Math.random() * 50)); // Numeri casuali
 }
 
 // Mostra i numeri generati
@@ -12,14 +12,13 @@ for (let i = 0; i < 5; i++) {
     numbers_list.innerHTML += '<li>' + element + '</li>';
 }
 
-// Nasconde i numeri dopo 7 secondi e mostra il form
+// Nasconde i numeri dopo 30 secondi e mostra il form
 setTimeout(() => {
     numbers_list.innerHTML = ''; // Svuota il contenitore
     const visualnumbers = document.getElementById("answers-form");
     visualnumbers.classList.remove("d-none");
-}, 7000);
+}, 30000);
 
-// Assicurati che il DOM sia caricato prima di aggiungere gli eventi
 document.addEventListener('DOMContentLoaded', function () {
     const sendButton = document.getElementById('send');
 });
