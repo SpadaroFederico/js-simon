@@ -9,9 +9,7 @@
 
   <!-- Bootstrap -->
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css'
-    integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg=='
-    crossorigin='anonymous' />
-
+    integrity='sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==' crossorigin='anonymous' />
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 
@@ -27,9 +25,11 @@
     <!-- Form -->
     <form id="answers-form" class="d-none">
 
-      <button onclick="numeriCasuali">Genera numeri</button>
+      <!-- Aggiungiamo un bottone -->
+      <button type="button" onclick="generaNumeriCasuali()">Genera numeri</button>
 
-      <div id="numeriCasuali">
+      <!-- Contenitore dei numeri -->
+      <div id="numeriCasuali" style="margin-top: 20px; font-size: 24px; font-weight: bold;">
 
       </div>
 
@@ -46,7 +46,9 @@
   </div>
 
   <!-- Scripts -->
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
+
+
